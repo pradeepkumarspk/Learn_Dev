@@ -34,11 +34,6 @@ namespace Selenium_Docker
             driver.FindElement(By.XPath("//input[@class='btn btn-default btn-lg btn-block']")).Click();
             Assert.IsTrue(driver.Title.Contains("Radial: Store Order Manager"), "Verified title of the page");
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            //WebDriverWait Wait = new WebDriverWait(driver, new TimeSpan(0, 0, 5));
-            //Wait.Until(By.XPath("//a[@id='reskin-logout']"));
-            //var ss = driver.GetScreenshot();
-            //ss.SaveAsFile("ss.png", System.Drawing.Imaging.ImageFormat.Png);
-
             driver.FindElement(By.XPath("//i[@class='ss-icon ss-navigatedown ss-black-tie-bold reskin-dropdown-arrow']")).Click();
             driver.FindElement(By.XPath("//a[@id='reskin-logout']")).Click();
         }
