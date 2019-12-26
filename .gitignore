@@ -3,6 +3,3 @@
 ################################################################################
 
 /.vs/Selenium_Docker
-/Selenium_Docker/bin/Debug/netcoreapp3.1
-/Selenium_Docker/Database
-/Selenium_Docker/obj
